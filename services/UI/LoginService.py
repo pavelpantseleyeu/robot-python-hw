@@ -3,9 +3,9 @@ from pages import LoginPage
 from pages import NavigatorPage
 
 
-def login(user, password):
+def login():
     LoginPage.open_login_page()
-    LoginPage.login_in(UserBuilder.get_default_user(user, password))
+    LoginPage.login_in(UserBuilder.get_default_user())
 
 
 def login_with_incorrect_password():
